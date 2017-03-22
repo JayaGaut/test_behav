@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Simply</title>
+    <link rel="stylesheet" href="CSS/test2_styling.css">
+    <link rel="stylesheet" href="CSS/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="CSS/intl-tel-input-11.0.0/build/css/intlTelInput.css">
+</head>
+
+<body>
+<header>
+    <div id="fullscreennav" class="container-fluid">
+        <a href="#"><img class="logo-header" src=" http://teomtl.com/wp-content/themes/teo/img/teo-taxi.svg"
+                         alt="behav test"></a>
+        <nav class="navbar">
+            <a class="menu-tab"><img id="fullwidth-menu"
+                                     src="http://teomtl.com/wp-content/themes/teo/img/hamburger-blanc.svg"
+                                     alt="Menu"></a>
+
+        </nav><!--navbar block ends-->
+    </div><!-- fullscreennav div ends-->
+
+    <div id="smallscreen-nav" class="container-fluid">
+        <a href="#"> <img class="white-logo" src=" http://teomtl.com/wp-content/themes/teo/img/teo-blanc.svg"
+                          alt="behav test"></a>
+        <nav class="navbar">
+            <a class="menu-tab"><img id="smallwidth-menu"
+                                     src="http://teomtl.com/wp-content/themes/teo/img/hamburger-blanc.svg"
+                                     alt="Menu"></a>
+
+        </nav>
+    </div><!--smallscreen-nav div ends-->
+
+</header>
+
+
+<section class="hero">
+    <div class="inner">
+        <div class="copy-heading">
+            <h1>My Téo, my city, just a tap away</h1>
+        </div><!-- copy-heading div ends-->
+        <div id="phone-form-section" class="col-sm-5">
+            <div class="copy-form-ponedetails">
+                <h2 class="section-heading">Get the Téo Taxi app on your smartphone right now!</h2>
+                <p>Enter your phone number below and we’ll send you an SMS to download the app.</p>
+                <input type="tel" class="form-control" id="phone" name="phone" autocomplete="off"
+                       pattern="^\d{4}-\d{3}-\d{4}$" required>
+                <span id="valid-msg" class="hide">✓ Valid</span>
+                <span id="error-msg" class="hide">Invalid number</span>
+            </div><!-- copy-form-ponedetails div ends-->
+            <button id="send-app-btn" class="btn btn-lg" onclick="sendSms()">Send me the app</button>
+        </div><!-- col-sm-5 div ends-->
+    </div><!-- inner div ends-->
+
+</section><!-- hero section ends-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="CSS/intl-tel-input-11.0.0/build/js/intlTelInput.js"></script>
+<script src="app.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,178 @@
+@font-face {
+    font-family: "Proxima Nova Rg";
+    src: url("../fonts/proxima-nova-bold-58cd8ba1616c3.otf") format("truetype");
+}
+
+/*Defining the layout*/
+*, *:after, *:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#header-test1 {
+    background-color: #262d47;
+}
+
+.mdl-layout-title {
+    margin: 0;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
+.hero {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: #1c2237;
+}
+
+/*header crousel*/
+.carousel-inner > .item > img {
+    margin: auto;
+    margin-top: -10px;
+}
+
+.carousel-inner .active.left {
+    left: -33%;
+}
+
+.carousel-inner .next {
+    left: 33%;
+}
+
+.carousel-inner .prev {
+    left: -33%;
+}
+
+.carousel-inner:before {
+    position: absolute;
+    top: -10px;
+    bottom: 10px;
+    right: 92%;
+    left: 0;
+    content: "";
+    display: block;
+    background: url("../images/header_image.png");
+    z-index: 2;
+}
+
+.carousel-inner:after {
+    position: absolute;
+    top: -10px;
+    bottom: 10px;
+    right: 0;
+    left: 92%;
+    content: "";
+    display: block;
+    background: url("../images/header_image2.png");
+    z-index: 2;
+}
+
+@media (max-width: 1000px) {
+    .carousel-inner > .item > img {
+        width: 300px;
+    }
+
+    .carousel-inner:before {
+        display: none;
+    }
+
+    .carousel-inner:after {
+        display: none;
+
+    }
+}
+
+.first-content {
+    background-color: #262d47;
+}
+/*suggested track listing*/
+
+.first-content-heading {
+    color: white;
+    font-size: medium;
+}
+
+.sugesdted-stations {
+    margin-top: 20px;
+    display: block;
+}
+
+.station-icon {
+    float: left;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+#icon-test1{
+    float: left;
+}
+
+ul {
+    list-style: none;
+}
+
+.tracks-list > li {
+    margin-top: 20px;
+    display: block;
+}
+
+/*using specificity to align elements*/
+#icon1{
+    float: right;
+}
+
+#icon2{
+    float: right;
+}
+
+#icon3{
+    float: right;
+}
+
+#icon4{
+    float: right;
+}
+
+/*changing content position as per size*/
+@media (max-width: 500px) {
+    .first-content-heading {
+        font-size: 13px;
+    }
+
+}
+
+@media (max-width: 400px) {
+
+    ul > li {
+        margin-left: -10%;
+    }
+
+    .sugesdted-stations {
+        margin-left: -5px;
+    }
+}
+
+/*record listing*/
+.record-title {
+    margin-top: 20px;
+    color: white;
+    margin-left: 12px;
+}
+
+.record-name {
+    color: #02c5c8;
+    margin-left: 15px;
+}
+
+.fa-ellipsis-h {
+    color: white;
+    float: right;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
